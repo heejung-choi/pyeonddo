@@ -5,5 +5,5 @@ app_name = 'accounts'
 
 urlpatterns = [
   path('', views.index, name='index'),   
-  path('', views.mypage, name='mypage'),   
+  path('mypage/', views.mypage, name='mypage'),   
 ]

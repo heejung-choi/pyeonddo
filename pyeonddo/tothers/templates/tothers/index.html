@@ -2,6 +2,30 @@
 {% load static %}
 {% block style %}
     <style>
+    h4{
+        font-family: 'CookieRun-Regular';    
+    }
+    span{
+        font-family: 'CookieRun-Regular';    
+    }
+    strong{
+        font-family: 'CookieRun-Regular';    
+    }
+    p.tit {
+        font-family: 'CookieRun-Regular';
+        font-size:0.8rem;
+    }
+    span.cost{
+        font-family: 'CookieRun-Regular';
+        color:red;
+        font-size:0.8rem
+    }
+    @font-face {
+        font-family: 'CookieRun-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
     li{
         list-style:none;
     }
@@ -10,6 +34,8 @@
     }
     .prod_box{
         text-align:center;
+        width:120px;
+        height:230px;
     }
     </style>
 {% endblock %}
@@ -19,30 +45,31 @@
 <div>
     <h4 style="text-align:center">나만의 추천상품</h4>
 </div>
+<br>
 <div style="text-align:right">
-    <span># 간편식사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <span>선호상품 : 간편식사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 </div>
 <br>
 <div class="reco_prod row">
-    <ul class="prod_list">
+    <ul class="prod_list pl-1">
         <li>
-            <div class="prod_box">
+            <div class="prod_box ml-4">
             <span><strong>GS25</strong></span>
                 <br> <br>
-                <p class="img"><img src="{% static 'img/food/food1.jpg' %}"></p>
-                <p class="tit">한끼불고기150G<br>(달콤한맛)</p>
+                <p class="img"><img src="{% static 'img/food/food1.jpg' %}" style="width:100px;"></p>
+                <p class="tit m-0">한끼불고기150G<br>(달콤한맛)</p>
                 <p class="price">
                     <span class="cost">4,900<span>원</span></span>
                 </p>    
             </div>    
         </li>
     </ul>
-    <ul class="prod_list">
+    <ul class="prod_list pl-1">
         <li>
             <div class="prod_box">
            <span><strong>CU</strong></span>
                 <br> <br>
-                <p class="img"><img src="{% static 'img/food/food2.jpg' %}" style="width:165px;"></p>
+                <p class="img"><img src="{% static 'img/food/food2.jpg' %}" style="width:100px;"></p>
                 <p class="tit">홍천곤드레불고기</p>
                 <p class="price">
                     <span class="cost">1,200<span>원</span></span>
@@ -50,12 +77,12 @@
             </div>    
         </li>
     </ul>
-    <ul class="prod_list">
+    <ul class="prod_list pl-1">
         <li>
             <div class="prod_box">
            <span><strong>CU</strong></span>
                 <br> <br>
-                <p class="img"><img src="{% static 'img/food/food3.jpg' %}" style="width:165px;"></p>
+                <p class="img"><img src="{% static 'img/food/food3.jpg' %}" style="width:100px;"></p>
                 <p class="tit">오돌뼈한상</p>
                 <p class="price">
                     <span class="cost">4,900<span>원</span></span>
@@ -63,12 +90,12 @@
             </div>    
         </li>
     </ul>
-    <ul class="prod_list">
+    <ul class="prod_list pl-1">
         <li>
-            <div class="prod_box">
+            <div class="prod_box  ml-4">
            <span><strong>이마트24</strong></span>
                 <br> <br>
-                <p class="img"><img src="{% static 'img/food/food4.jpg' %}" style="width:165px;" ></p>
+                <p class="img"><img src="{% static 'img/food/food4.jpg' %}" style="width:100px;" ></p>
                 <p class="tit">풀무원)사골곰탕500g</p>
                 <p class="price">
                     <span class="cost">4,900<span>원</span></span>
@@ -76,25 +103,25 @@
             </div>    
         </li>
     </ul>
-    <ul class="prod_list">
+    <ul class="prod_list pl-1">
         <li>
             <div class="prod_box">
            <span><strong>세븐일레븐</strong></span>
                 <br> <br>
-                <p class="img"><img src="{% static 'img/food/food5.jpg' %}" style="width:165px;"></p>
-                <p class="tit">동원)머쉬룸차우더260g</p>
+                <p class="img"><img src="{% static 'img/food/food5.jpg' %}" style="width:100px;"></p>
+                <p class="tit  m-0">동원)머쉬룸차우더260g</p>
                 <p class="price">
                     <span class="cost">3,900<span>원</span></span>
                 </p>    
             </div>    
         </li>
     </ul>
-    <ul class="prod_list">
+    <ul class="prod_list pl-1">
         <li>
             <div class="prod_box">
            <span><strong>세븐일레븐</strong></span>
                 <br> <br>
-                <p class="img"><img src="{% static 'img/food/food6.jpg' %}" style="width:165px;"></p>
+                <p class="img"><img src="{% static 'img/food/food6.jpg' %}" style="width:100px;"></p>
                 <p class="tit">진주햄)직화곱창160g</p>
                 <p class="price">
                     <span class="cost">6,900<span>원</span></span>
