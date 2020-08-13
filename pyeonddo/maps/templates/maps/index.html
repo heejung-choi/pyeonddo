@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+    <style>
+    #bts{
+        width: 100%;
+        font-size:0.7rem;
+    }
+    </style>
+{% endblock %}
+{% block content %}
+<!--20200813 semi 편의점 지도페이지 구성-->
+<br>
+<div>
+    <h5 style="text-align:center">편의점 지도</h5>
+</div>
+<br>
+<div id="button area mx-auto">
+    <div class="row mx-0 mt-1">
+        <div class="col-3">
+            <a id="bts" class="btn btn-success" href="#" role="button">약</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-success" href="#" role="button">ATM</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-success" href="#" role="button">와인</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-success" href="#" role="button">로또</a>
+        </div>
+    </div>
+        <div class="row mx-0 mt-1">
+        <div class="col-3">
+            <a id="bts" class="btn btn-outline-success" href="#" role="button">택배</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-outline-success" href="#" role="button">충전</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-outline-success" href="#" role="button">담배</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-outline-success" href="#" role="button">베이커리</a>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--지도 담을 공간만들기-->
+<div id="map" style="width:100%;height:450px;"></div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ce2a7cdddeb933a579d61187a2db596b&libraries=services,clusterer"></script>
+<script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+  
+    // 마커를 표시할 위치와 title 객체 배열입니다 
+    var positions_GS25 = [
+        {
+            title: 'GS25뉴국제호텔점', 
+            latlng: new kakao.maps.LatLng(37.5679455464384,126.977968031148)
+        },
+        {
+            title: 'GS25중구무교점', 
+            latlng: new kakao.maps.LatLng(37.5671421016237,126.980368823536)
+        },
+    ]; 
+    var positions_CU = [
+        {
+            title: 'CU한국프레스센터점', 
+            latlng: new kakao.maps.LatLng(37.5674198878673,126.977873671097)
+        },
+        {
+            title: 'CU 코리아나호텔점', 
+            latlng: new kakao.maps.LatLng(37.5678135772855,126.976247211074)
+        },
+        {
+            title: 'CU 시청광장점', 
+            latlng: new kakao.maps.LatLng(37.5653821677485,126.979208538495)
+        },
+    ];   
+    var positions_SEVEN11 = [
+        {
+            title: '세븐일레븐 무교스타점', 
+            latlng: new kakao.maps.LatLng(37.5676347080798,126.978984811389)
+        },
+        {
+            title: '세븐일레븐 무교점', 
+            latlng: new kakao.maps.LatLng(37.5670466069498,126.979375711608)
+        },
+    ];
+      var positions_EMART24 = [
+        {
+            title: '이마트24 서울시청점', 
+            latlng: new kakao.maps.LatLng(37.566480707788,126.97946958899)
+        },
+    ];    
+    
+   // GS25 - 마커 이미지의 이미지 주소입니다
+   
+    for (var i = 0; i < positions_GS25.length; i ++) {
+        
+        // 마커 이미지의 이미지 크기 입니다
+        var imageSize = new kakao.maps.Size(24, 35); 
+        
+        // 마커 이미지를 생성합니다    
+        var markerImage = new kakao.maps.MarkerImage("{% static 'img/map_img/gs25.png' %}", imageSize); 
+        
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            map: map, // 마커를 표시할 지도
+            position:positions_GS25[i].latlng, // 마커를 표시할 위치
+            title : positions_GS25[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+            image : markerImage // 마커 이미지 
+        });
+    }
+
+    // CU - 마커이미지 주소입니다.    
+    {% comment %} var imageSrc_CU = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";  {% endcomment %}
+   
+    for (var i = 0; i < positions_CU.length; i ++) {
+        
+        // 마커 이미지의 이미지 크기 입니다
+        var imageSize = new kakao.maps.Size(24, 35); 
+        
+        // 마커 이미지를 생성합니다    
+        var markerImage_CU = new kakao.maps.MarkerImage("{% static 'img/map_img/cu.png' %}", imageSize); 
+        
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            map: map, // 마커를 표시할 지도
+            position:positions_CU[i].latlng, // 마커를 표시할 위치
+            title : positions_CU[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+            image : markerImage_CU // 마커 이미지 
+        });
+    }
+    //11- 마커이미지 주소입니다.    
+    {% comment %} var imageSrc_SEVEN11 = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";  {% endcomment %}
+   
+    for (var i = 0; i < positions_SEVEN11.length; i ++) {
+        
+        // 마커 이미지의 이미지 크기 입니다
+        var imageSize = new kakao.maps.Size(24, 35); 
+        
+        // 마커 이미지를 생성합니다    
+        var markerImage_SEVEN11 = new kakao.maps.MarkerImage("{% static 'img/map_img/seven.png' %}", imageSize); 
+        
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            map: map, // 마커를 표시할 지도
+            position:positions_SEVEN11[i].latlng, // 마커를 표시할 위치
+            title : positions_SEVEN11[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+            image : markerImage_SEVEN11 // 마커 이미지 
+        });
+    }
+
+
+    // EMART24 - 마커이미지 주소입니다.    
+    {% comment %} var imageSrc_EMART24 = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";   {% endcomment %}
+   
+    for (var i = 0; i < positions_EMART24.length; i ++) {
+        
+        // 마커 이미지의 이미지 크기 입니다
+        var imageSize = new kakao.maps.Size(24, 35); 
+        
+        // 마커 이미지를 생성합니다    
+        var markerImage_EMART = new kakao.maps.MarkerImage("{% static 'img/map_img/emart24.png' %}", imageSize); 
+        
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            map: map, // 마커를 표시할 지도
+            position:positions_EMART24[i].latlng, // 마커를 표시할 위치
+            title : positions_EMART24[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+            image : markerImage_EMART // 마커 이미지 
+        });
+    }
+</script>
+{% endblock %}
