@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block style %}
+    <style>
+    #bts{
+        width: 100%;
+        font-size:0.7rem;
+    }
+    </style>
+{% endblock %}
+{% block content %}
+<br>
+<div>
+    <h5 style="text-align:center">편의점 지도</h5>
+</div>
+<br>
+<div id="button area mx-auto">
+    <div class="row mx-0 mt-1">
+        <div class="col-3">
+            <a id="bts" class="btn btn-success" href="#" role="button">약</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-success" href="#" role="button">ATM</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-success" href="#" role="button">와인</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-success" href="#" role="button">로또</a>
+        </div>
+    </div>
+        <div class="row mx-0 mt-1">
+        <div class="col-3">
+            <a id="bts" class="btn btn-outline-success" href="#" role="button">택배</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-outline-success" href="#" role="button">충전</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-outline-success" href="#" role="button">담배</a>
+        </div>
+        <div class="col-3">
+            <a id="bts" class="btn btn-outline-success" href="#" role="button">베이커리</a>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--지도 담을 공간만들기-->
+<div id="map" style="width:100%;height:450px;"></div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ce2a7cdddeb933a579d61187a2db596b&libraries=services,clusterer"></script>
+<script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+</script>
+{% endblock %}
