@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+    <style>
+    li{
+        list-style:none;
+    }
+    .prod_box{
+        border: 1px solid #e9e9e9;
+    }
+    .prod_box{
+        text-align:center;
+    }
+    </style>
+{% endblock %}
+{% block content %}
+<!--20200813 semi 나만의추천상품 페이지 구성-->
+<br>
+<div>
+    <h4 style="text-align:center">나만의 추천상품</h4>
+</div>
+<div style="text-align:right">
+    <span># 간편식사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+<br>
+<div class="reco_prod row">
+    <ul class="prod_list">
+        <li>
+            <div class="prod_box">
+            <span><strong>GS25</strong></span>
+                <br> <br>
+                <p class="img"><img src="{% static 'img/food/food1.jpg' %}"></p>
+                <p class="tit">한끼불고기150G<br>(달콤한맛)</p>
+                <p class="price">
+                    <span class="cost">4,900<span>원</span></span>
+                </p>    
+            </div>    
+        </li>
+    </ul>
+    <ul class="prod_list">
+        <li>
+            <div class="prod_box">
+           <span><strong>CU</strong></span>
+                <br> <br>
+                <p class="img"><img src="{% static 'img/food/food2.jpg' %}" style="width:165px;"></p>
+                <p class="tit">홍천곤드레불고기</p>
+                <p class="price">
+                    <span class="cost">1,200<span>원</span></span>
+                </p>    
+            </div>    
+        </li>
+    </ul>
+    <ul class="prod_list">
+        <li>
+            <div class="prod_box">
+           <span><strong>CU</strong></span>
+                <br> <br>
+                <p class="img"><img src="{% static 'img/food/food3.jpg' %}" style="width:165px;"></p>
+                <p class="tit">오돌뼈한상</p>
+                <p class="price">
+                    <span class="cost">4,900<span>원</span></span>
+                </p>    
+            </div>    
+        </li>
+    </ul>
+    <ul class="prod_list">
+        <li>
+            <div class="prod_box">
+           <span><strong>이마트24</strong></span>
+                <br> <br>
+                <p class="img"><img src="{% static 'img/food/food4.jpg' %}" style="width:165px;" ></p>
+                <p class="tit">풀무원)사골곰탕500g</p>
+                <p class="price">
+                    <span class="cost">4,900<span>원</span></span>
+                </p>    
+            </div>    
+        </li>
+    </ul>
+    <ul class="prod_list">
+        <li>
+            <div class="prod_box">
+           <span><strong>세븐일레븐</strong></span>
+                <br> <br>
+                <p class="img"><img src="{% static 'img/food/food5.jpg' %}" style="width:165px;"></p>
+                <p class="tit">동원)머쉬룸차우더260g</p>
+                <p class="price">
+                    <span class="cost">3,900<span>원</span></span>
+                </p>    
+            </div>    
+        </li>
+    </ul>
+    <ul class="prod_list">
+        <li>
+            <div class="prod_box">
+           <span><strong>세븐일레븐</strong></span>
+                <br> <br>
+                <p class="img"><img src="{% static 'img/food/food6.jpg' %}" style="width:165px;"></p>
+                <p class="tit">진주햄)직화곱창160g</p>
+                <p class="price">
+                    <span class="cost">6,900<span>원</span></span>
+                </p>    
+            </div>    
+        </li>
+    </ul>
+</div>
+<br>
+{% endblock %}
