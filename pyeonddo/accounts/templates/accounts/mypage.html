@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+    <style>
+    li{
+        list-style:none;
+    }
+    .prod_box{
+        text-align:center;
+        width:100px;
+        height:180px;
+    }
+    div.col-6{
+        font-size:0.8rem;
+    }
+    p.tit{
+        font-size:0.6rem;
+    }
+    span.cost{
+        color:red;
+        font-size:0.8rem; 
+    }
+    {% comment %} strong{
+        background-color: #38b448;
+        padding:8px;
+        border-radius:5px;
+    }  {% endcomment %}
+    h5{
+        margin-bottom:15px;
+    }
+    </style>
+{% endblock %}
+{% block content %}
+<!-- 20200814 semi mypage 시작-->
+<br><br> 
+<div>
+    <h6 style="text-align:right;"><strong>희동이</strong>님 환영합니다
+    <a id="bts" class="btn btn-success" href="#" role="button">정보수정</a></h6>
+
+</div>
+
+<!-- 내가 저장한 상품 -->
+<div class="mainproduct">
+    <div class="mainproductcontent">
+    <h5 class="mainprouctfont"># 내가 저장한 상품</h5>
+        <div style="width:372px; height:200px; overflow:scroll; -webkit-overflow-scrolling:touch;">
+        <div class ="collectitem row p-1">
+            <div class="col m-0 p-0"> 
+                <p class="img m-0" style="width:90px; height:80px;"><img src="{% static 'img/food/milk1.jpg' %}" style="width:90px; height:80px;"></p>
+            </div>
+            <div class="col-6">
+            GS25 역삼점<br>
+            서울)바나나우유200ML 1+1<br>
+            950원<br>
+            </div>
+            <div class="col m-0 p-0">
+               <a id="bts" class="btn btn btn-outline-success btn-lg" style="width:60px;" href="#" role="button"><text style="font-size:0.8rem">삭제</text></a>
+            </div>
+        </div> 
+        <div class ="collectitem row  p-1">
+            <div class="col m-0 p-0 ">
+                <p class="img  m-0" style="width:90px; height:80px;"><img src="{% static 'img/food/milk2.jpg' %}" style="width:90px; height:80px;"></p>
+            </div>
+            <div class="col-6">
+            세븐일레븐 역삼점<br>
+            빙그레)단지우유한정판240ML 2+1<br>
+            1400원<br>
+            </div>
+            <div class="col m-0 p-0">
+               <a id="bts" class="btn btn btn-outline-success btn-lg" style="width:60px;" href="#" role="button"><text style="font-size:0.8rem">삭제</text></a>
+            </div>
+        </div>
+        <div class ="collectitem row  p-1">
+            <div class="col m-0 p-0 ">
+                <p class="img  m-0" style="width:90px; height:80px;"><img src="{% static 'img/food/milk3.jpg' %}" style="width:90px; height:80px;"></p>
+            </div>
+            <div class="col-6">
+            CU 역삼점<br>
+            빙그레)바나나우유라이트240ML 1+1<br>
+            1400원<br>
+            </div>
+            <div class="col m-0 p-0">
+               <a id="bts" class="btn btn btn-outline-success btn-lg" style="width:60px;" href="#" role="button"><text style="font-size:0.8rem">삭제</text></a>
+            </div>
+        </div>
+        </div>              
+    </div>    
+</div>    
+<!--단골매장 행사-->
+
+<div class="mainproduct">
+    <div class="mainproductcontent">
+    <h5 class="mainprouctfont"> # 단골매장 행사 (GS25 역삼점)</h5>
+        <div class="reco_prod row m-auto">
+        <ul class="prod_list p-1 ml-2">
+            <li>
+                <div class="prod_box">
+                    <br> <br>
+                    <p class="img"><img src="{% static 'img/food/coffee1.jpg' %}" style="width:80px;"></p>
+                    <p class="tit m-0">덴마크)블랙아메리카노350ML</p>
+                    <p class="price">
+                        <span class="cost">4,900<span>원</span></span>
+                    </p>    
+                </div>    
+            </li>
+        </ul>
+        <ul class="prod_list p-1">
+            <li>
+                <div class="prod_box">
+                    <br> <br>
+                    <p class="img"><img src="{% static 'img/food/coffee2.jpg' %}" style="width:80px;"></p>
+                    <p class="tit">홍천곤드레불고기</p>
+                    <p class="price">
+                        <span class="cost">1,200<span>원</span></span>
+                    </p>    
+                </div>    
+            </li>
+        </ul>
+        <ul class="prod_list p-1">
+            <li>
+                <div class="prod_box">
+                    <br> <br>
+                    <p class="img"><img src="{% static 'img/food/coffee3.jpg' %}" style="width:80px;"></p>
+                    <p class="tit">오돌뼈한상</p>
+                    <p class="price">
+                        <span class="cost">4,900<span>원</span></span>
+                    </p>    
+                </div>    
+            </li>
+        </ul>
+        </div>
+    <button type="button" class="btn btn-success mainbutton">더 알아보기</button>    
+    </div>
+</div>
+{% endblock %}
