@@ -4,7 +4,17 @@
     <style>
     #bts{
         width: 100%;
-        font-size:0.7rem;
+        font-size:0.9rem;
+        font-family: 'CookieRun-Regular';
+    }
+    h5{
+        font-family: 'CookieRun-Regular';
+    }
+    @font-face {
+        font-family: 'CookieRun-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
     }
     </style>
 {% endblock %}
@@ -12,36 +22,36 @@
 <!--20200813 semi 편의점 지도페이지 구성-->
 <br>
 <div>
-    <h5 style="text-align:center">편의점 지도</h5>
+    <h4 style="text-align:center">편의점 지도</h4>
 </div>
 <br>
 <div id="button area mx-auto">
     <div class="row mx-0 mt-1">
         <div class="col-3">
-            <a id="bts" class="btn btn-success" href="#" role="button">약</a>
+            <a id="bts" class="btn btn-success p-1" href="#" role="button">약</a>
         </div>
         <div class="col-3">
-            <a id="bts" class="btn btn-success" href="#" role="button">ATM</a>
+            <a id="bts" class="btn btn-success p-1" href="#" role="button">ATM</a>
         </div>
         <div class="col-3">
-            <a id="bts" class="btn btn-success" href="#" role="button">와인</a>
+            <a id="bts" class="btn btn-success p-1" href="#" role="button">와인</a>
         </div>
         <div class="col-3">
-            <a id="bts" class="btn btn-success" href="#" role="button">로또</a>
+            <a id="bts" class="btn btn-success p-1" href="#" role="button">로또</a>
         </div>
     </div>
         <div class="row mx-0 mt-1">
         <div class="col-3">
-            <a id="bts" class="btn btn-outline-success" href="#" role="button">택배</a>
+            <a id="bts" class="btn btn-outline-success p-1" href="#" role="button">택배</a>
         </div>
         <div class="col-3">
-            <a id="bts" class="btn btn-outline-success" href="#" role="button">충전</a>
+            <a id="bts" class="btn btn-outline-success p-1" href="#" role="button">충전</a>
         </div>
         <div class="col-3">
-            <a id="bts" class="btn btn-outline-success" href="#" role="button">담배</a>
+            <a id="bts" class="btn btn-outline-success p-1" href="#" role="button">담배</a>
         </div>
         <div class="col-3">
-            <a id="bts" class="btn btn-outline-success" href="#" role="button">베이커리</a>
+            <a id="bts" class="btn btn-outline-success p-1" href="#" role="button">베이커리</a>
         </div>
     </div>
 </div>
@@ -106,10 +116,10 @@
     for (var i = 0; i < positions_GS25.length; i ++) {
         
         // 마커 이미지의 이미지 크기 입니다
-        var imageSize = new kakao.maps.Size(24, 35); 
+        var imageSize = new kakao.maps.Size(40, 40); 
         
         // 마커 이미지를 생성합니다    
-        var markerImage = new kakao.maps.MarkerImage("{% static 'img/map_img/gs25.png' %}", imageSize); 
+        var markerImage = new kakao.maps.MarkerImage("{% static 'img/map_img/gs.png' %}", imageSize); 
         
         // 마커를 생성합니다
         var marker = new kakao.maps.Marker({
@@ -126,7 +136,7 @@
     for (var i = 0; i < positions_CU.length; i ++) {
         
         // 마커 이미지의 이미지 크기 입니다
-        var imageSize = new kakao.maps.Size(24, 35); 
+        var imageSize = new kakao.maps.Size(40, 40); 
         
         // 마커 이미지를 생성합니다    
         var markerImage_CU = new kakao.maps.MarkerImage("{% static 'img/map_img/cu.png' %}", imageSize); 
@@ -145,7 +155,7 @@
     for (var i = 0; i < positions_SEVEN11.length; i ++) {
         
         // 마커 이미지의 이미지 크기 입니다
-        var imageSize = new kakao.maps.Size(24, 35); 
+        var imageSize = new kakao.maps.Size(40, 40); 
         
         // 마커 이미지를 생성합니다    
         var markerImage_SEVEN11 = new kakao.maps.MarkerImage("{% static 'img/map_img/seven.png' %}", imageSize); 
@@ -166,7 +176,7 @@
     for (var i = 0; i < positions_EMART24.length; i ++) {
         
         // 마커 이미지의 이미지 크기 입니다
-        var imageSize = new kakao.maps.Size(24, 35); 
+        var imageSize = new kakao.maps.Size(40, 40); 
         
         // 마커 이미지를 생성합니다    
         var markerImage_EMART = new kakao.maps.MarkerImage("{% static 'img/map_img/emart24.png' %}", imageSize); 
