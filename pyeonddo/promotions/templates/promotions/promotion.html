@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/main.css'%}">
+<style>
+
+</style>
+
+{% endblock  %}
+{% block content %}
+
+<button type="button" class="btn btn-success probutton">가까운 지점 행사보기</button> 
+
+<!--20200813 나만의 추천상품 시작-->
+<div class="proproduct">
+<div class="mainproductcontent">
+<h6 class="mainprouctfont">편의점 선택</h6>
+<div class="logos">
+  <div onClick="location.href ='http://URL주소'"><img src="{% static "img/미니스톱.png" %}" width="100%">
+  </div>
+  <div onClick="location.href ='http://URL주소'"><img src="{% static "img/세븐일레븐.png" %}" width="100%">
+  </div>
+  <div onClick="location.href ='http://URL주소'"><img src="{% static "img/이마트24.png" %}" width="100%">
+  </div>
+  <div onClick="location.href ='http://URL주소'"><img src="{% static "img/CU.png" %}" width="100%">
+  </div>
+  <div onClick="location.href ='http://URL주소'"><img src="{% static "img/GS25.png" %}" width="100%">
+  </div>
+</div>
+</div>
+</div>
+<!--20200813 나만의 추천상품 끝-->
+
+<table class="table table-striped protable" style="margin-bottom: 0px;"> 
+  <thead>
+    <tr>
+      <th scope="col">전체</th>
+      <th scope="col">음료</th>
+      <th scope="col" style="color:green">아이스크림</th>
+      <th scope="col">과자</th>
+      <th scope="col">간편식사</th>
+      <th scope="col">생활용품</th>
+    </tr>
+  </thead>
+
+</table>
+<table class="table table-striped protable" style="margin-bottom: 0px;">
+  <tbody>
+    <tr>
+      <th scope="row" style="color:green">1 + 1</th>
+      <td>2 + 1</td>
+      <td>3 + 1</td>
+      <td>증정</td>
+      <td>할인</td>
+    </tr>    
+  </tbody>
+</table>
+<table class="table table-hover" style="margin-bottom: 0px;">
+  <tbody>
+    <tr>
+      <th scope="row" style="color:green"><img src="{% static "img/cardpro1.png" %}" width="100px" height="70px"></th>
+      <td><span class="row1" style="font-size: 90%;">PB)빙하속의망고땡
+      <span class="prouct1font text-white bg-danger plusevent">1 + 1</span><br></span>
+      <span style="font-size: 80%;">1000원</span><br>
+      <span class="row2" style="font-size: 70%;">미니스톱</span>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row" style="color:green"><img src="{% static "img/cardpro2.png" %}" width="100px" height="70px"></th>
+      <td><span class="row1" style="font-size: 90%;">PB)빙하속의소다땡
+      <span class="prouct1font text-white bg-danger plusevent">1 + 1</span><br></span>
+      <span style="font-size: 80%;">1000원</span><br>
+      <span class="row2" style="font-size: 70%;">미니스톱</span>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row" style="color:green"><img src="{% static "img/cardpro3.png" %}" width="100px" height="70px"></th>
+      <td><span class="row1" style="font-size: 90%;">도라에몽망고아이스
+      <span class="prouct1font text-white bg-danger plusevent">1 + 1</span><br></span>
+      <span style="font-size: 80%;">1200원</span><br>
+      <span class="row2" style="font-size: 70%;">미니스톱</span>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row" style="color:green"><img src="{% static "img/cardpro4.png" %}" width="100px" height="70px"></th>
+      <td><span class="row1" style="font-size: 90%;">초코우유시바
+      <span class="prouct1font text-white bg-danger plusevent">1 + 1</span><br></span>
+      <span style="font-size: 80%;">1200원</span><br>
+      <span class="row2" style="font-size: 70%;">미니스톱</span>
+      </td>
+      <td></td>
+    </tr>
+        
+  </tbody>
+</table>
+
+
+{% endblock  %}

@@ -39,10 +39,20 @@
 </div>
 
 <!--20200813 희정 캐러셀 끝-->
+<div class="text-center">
+<form>
+  <input class="price" type="search" id="gsearch" name="gsearch" placeholder="원하는 상품의 최저가를 검색하세요.">
+  <input class="price2"type="submit"  value="검색">
+</form>
+</div>
+
+
+<!--20200814 희정 검색 끝-->
+
 <!--20200813 나만의 추천상품 시작-->
 <div class="mainproduct">
 <div class="mainproductcontent">
-<h6 class="mainprouctfont"> 나만의 추천상품</h6>
+<h6 class="mainprouctfont"> 나만의 추천상품 [간편식사]</h6>
     <div class="productcontent2">
         <div class="text-center">            
             <span class="prouct1font">CU</span><br>
@@ -93,59 +103,37 @@ style="background-color: #c8eecd;  border-radius: 30px;">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="10000">
       <div class="mainproductcontent">
-<h6 class="mainprouctfont"> 나만의 추천상품</h6>
-    <div class="productcontent2">
+<h6 class="mainprouctfont"> CU 한국프레스센터점 100m</h6>
+<h6 class="mainprouctfont"> 코로나 극복! 영화관 가지말고 집에서 기분 내자~!</h6>
+    <div class="productcontent3">
         <div class="text-center">            
-            <span class="prouct1font">CU</span><br>
+            <span class="prouct1font text-white bg-danger plusevent">1 + 1</span><br>
             <span class="prouct2font">
-            오돌뼈한상<br>
-            <img src="{% static "img/mainproduct1.png" %}" width="70px" height="70px"><br>        
-            정상가 : 4900원<br>
-            <span class="text-danger">할인가 : 3500원</span>
+            <img src="{% static "img/eventproduct1.png" %}" width="100px" height="100px"><br>        
+            콘소메맛 팝콘<br>
+            가격 : 1200원            
             </span>        
         </div>
-        <div class="text-center">
-            <span class="prouct1font">GS25</span><br>
+        <div class="text-center">            
+            <span class="prouct1font text-white bg-danger plusevent">1 + 1</span><br>
             <span class="prouct2font">
-            돈가스스파게티<br>
-            <img src="{% static "img/mainproduct2.png" %}" width="70px" height="70px"><br>        
-            정상가 : 4400원<br>
-            <span class="text-danger">할인가 : 3300원</span>
+            <img src="{% static "img/eventproduct2.png" %}" width="100px" height="100px"><br>        
+            맥반석 오징어<br>
+            가격 : 2500원            
             </span>        
         </div>
-        <div class="text-center">
-            <span class="prouct1font">미니스톱</span><br>
+        <div class="text-center">            
+            <span class="prouct1font text-white bg-danger plusevent">2천원 할인</span><br>
             <span class="prouct2font">
-            닭껍질튀김<br>
-            <img src="{% static "img/mainproduct4.png" %}" width="70px" height="70px"><br>        
-            정상가 : 1800원<br>
-            <span class="text-danger">할인가 : 1500원</span>
+            <img src="{% static "img/eventproduct3.png" %}" width="100px" height="100px"><br>        
+            반반치킨<br>
+            가격 : 6900원            
             </span>        
         </div>
-        <div class="text-center">
-            <span class="prouct1font">이마트24</span><br>
-            <span class="prouct2font">
-            한입피자<br>
-            <img src="{% static "img/mainproduct1.png" %}" width="70px" height="70px"><br>        
-            정상가 : 1800원<br>
-            <span class="text-danger">2 + 1</span>
-            </span>
-        </div>      
+            
     </div>
-    <button type="button" class="btn btn-success mainbutton">더 알아보기</button>    
-
-    
-    
-    
-    
-    </div>
-    
-    
-    
-    
-    
-    
-    
+    <button type="button" class="btn btn-success mainbutton">더 알아보기</button> 
+    </div>     
     {% comment %} <div class="carousel-item" data-interval="2000">
       <img src="..." class="d-block w-100" alt="...">
     </div>
@@ -162,11 +150,32 @@ style="background-color: #c8eecd;  border-radius: 30px;">
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
 <!--20200813 캐러셀 끝-->
-
-
-
+<!--20200813 나만의 추천상품 시작-->
+<div class="mainproduct">
+<div class="mainproductcontent">
+<h6 class="mainprouctfont">편의점별 할인행사</h6>
+<div class="logos">
+<div onClick="location.href ='http://URL주소'"><img src="{% static "img/미니스톱.png" %}" width="100%">
+</div>
+<div onClick="location.href ='http://URL주소'"><img src="{% static "img/세븐일레븐.png" %}" width="100%">
+</div>
+<div onClick="location.href ='http://URL주소'"><img src="{% static "img/이마트24.png" %}" width="100%">
+</div>
+<div onClick="location.href ='http://URL주소'"><img src="{% static "img/CU.png" %}" width="100%">
+</div>
+<div onClick="location.href ='http://URL주소'"><img src="{% static "img/GS25.png" %}" width="100%">
+</div>
+</div>
+    
+<button type="button" class="btn btn-success mainbutton">더 알아보기</button>    
 
 </div>
+
+</div>
+<!--20200813 나만의 추천상품 끝-->
+
+
 
 {% endblock  %}

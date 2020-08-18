@@ -26,8 +26,12 @@ html, body {
     position:absolute;
     bottom:0;
     width:100%;
-    height:50px;   
-    background:#ccc;
+    height: 8%;   
+    left: 0px;
+}
+.footertop{
+    height:5%;
+    color:white;
 }
 .head{
     display:flex;
@@ -63,7 +67,7 @@ line-height: 10% ;
     margin-top:5%;  
     border: 1px solid #38b448;
     border-radius: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 5%;
     
 
   }
@@ -82,6 +86,16 @@ line-height: 10% ;
 }
 .productcontent2 div{
     width:25%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.productcontent3{
+    display:flex;
+    justify-content: space-around;
+}
+.productcontent3 div{
+    width:32%;
     padding-left: 1%;
     padding-right: 1%;
 }
@@ -107,4 +121,118 @@ line-height: 10% ;
     padding-bottom: 3px;
     margin-top: 5%;}
     
-        
+.plusevent{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.logos {
+    display:flex;
+    flex-direction:row;
+    padding: 2%;
+}
+    
+.logos div{
+width:20%
+}
+
+.footer {
+    display:flex;
+    flex-direction:row;
+    padding: 5%;
+}
+    
+.footer div{
+width:20%
+}
+.footericontext{
+    font-size: 80%;
+}
+.dot {
+    height: 82%;
+    width: 82%;
+    background-color: #38b448;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    color: white;
+}
+.dottext{
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+
+.price{   
+    width: 80%;
+    height: 30px;
+    margin-top:5%;  
+    border: 3px solid #38b448;
+    border-radius: 30px;
+   
+    color: dimgrey;
+}
+.price2{       
+    width: 18%;
+    height: 30px;
+    margin-top:5%;  
+    border: 1px solid #38b448;
+    border-radius: 30px;  
+    color: white; 
+    background-color:#38b448;  
+}
+
+input::-webkit-input-placeholder { 
+    font-size: 90%;
+    text-align: center;
+    padding-left: 15px;
+}
+input::-moz-placeholder { 
+    font-size: 90%;
+    text-align: center;
+    padding-left: 15px;
+}
+input:-ms-input-placeholder { 
+    font-size: 90%;
+    text-align: center;
+    padding-left: 15px;
+}
+input:-moz-placeholder { 
+    font-size: 90%;
+    text-align: center;
+    padding-left: 15px;
+}
+input::placeholder { 
+    font-size: 90%;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.probutton{
+    width: 80%;
+    height: 50px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 5%;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    margin-left: 10%;
+}
+
+.proproduct {
+    width: 100%;
+    height: 10%;
+    margin-top:5%;  
+    border: 1px solid #38b448;
+    border-radius: 30px;
+    margin-bottom: 5%;
+}
+.protable{
+    font-size: 70%;
+    font-weight: bold;
+}
+.row1{
+    color: mediumblue;
+}
+.row2{
+    color: dimgray;
+}

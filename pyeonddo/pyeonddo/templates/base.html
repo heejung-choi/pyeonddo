@@ -16,8 +16,7 @@
 <div id="wrapper">
 <div id="header">
     <div class="head">
-        <div>
-        
+        <div>        
         </div>
         <div class="text-center">            
         <img src="{% static "img/logo.png" %}" width="60%"; alt="">
@@ -34,9 +33,27 @@
     {% block content %}
     {% endblock      %}
     </div>
-    {% block footer %}
-    <div id="footer">footer</div>
-    {% endblock  %}
+    <div class="footertop"><h1>임시<br></h1></div>    
+    <div id="footer">
+    <div class="footer text-center">
+        <div onClick="location.href ='http://URL주소'"><img src="{% static "img/footlogo1.png" %}" width="50%">
+            <p class="footericontext">행사보기</p>
+        </div>
+        <div onClick="location.href ='http://URL주소'"><img src="{% static "img/footlogo2.png" %}" width="50%">
+            <p class="footericontext">편의점지도</p>
+        </div>
+        <div>
+            <span class="dot"><h6 class="dottext">편또</h6></span>
+        </div>
+        <div onClick="location.href ='http://URL주소'"><img src="{% static "img/footlogo3.png" %}" width="50%">
+            <p class="footericontext">추천상품</p>
+        </div>
+        <div onClick="location.href ='http://URL주소'"><img src="{% static "img/footlogo4.png" %}" width="50%">
+            <p class="footericontext">마이페이지</p>
+        </div>
+    </div>
+    </div>
+ </div>  
 <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
