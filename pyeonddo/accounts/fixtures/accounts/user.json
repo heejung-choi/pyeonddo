@@ -1,0 +1,25 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$gTENufFkbQcy$oAHVF5TV1vMRovI2PMnn3KYhcqoji0ZLjN7YW+uEdMA=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-08-19T14:52:57.690Z",
+        "phone": "",
+        "name_kr": "",
+        "category": null,
+        "prefer_store": null,
+        "store": null,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
