@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block style %}
+<style>
+
+</style>
+{% endblock  %}
+{% block content %}
+{% if request.resolver_match.url_name == 'signup' %}
+<br>
+    <h5 style='text-align:center;'>회원가입</h5>
+{% else %}
+    <h5 style='text-align:center;'>로그인</h5>
+{% endif %}
+
+<form action='' method='POST' enctype='multipart/form-data'>
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <div class="row">
+        <div class='col'></div>
+        <button class='col btn btn-success'>Submit</button>
+        <div class='col'></div>
+    </div>
+</form>
+{% endblock %}
+    
