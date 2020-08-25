@@ -48,9 +48,15 @@
         <div onClick="location.href ='http://URL주소'"><img src="{% static "img/footlogo3.png" %}" width="50%">
             <p class="footericontext">추천상품</p>
         </div>
-        <div onClick="location.href ='http://URL주소'"><img src="{% static "img/footlogo4.png" %}" width="50%">
-            <p class="footericontext">마이페이지</p>
-        </div>
+        {% if user.is_authenticated %}
+            <div onClick="location.href ='{% url 'accounts:mypage' user.username %}'"><img src="{% static "img/footlogo4.png" %}" width="50%">
+                <p class="footericontext">마이페이지</p>
+            </div>
+        {% else %}
+            <div onClick="location.href ='{% url 'accounts:login' %}'"><img src="{% static "img/footlogo4.png" %}" width="50%">
+                <p class="footericontext">마이페이지</p>
+            </div>
+      {% endif %} 
     </div>
     </div>
  </div>  

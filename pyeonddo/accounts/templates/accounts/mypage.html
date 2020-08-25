@@ -32,13 +32,17 @@
 {% endblock %}
 {% block content %}
 <!-- 20200814 semi mypage 시작-->
-<br><br> 
+<br>
 <div>
-    <h6 style="text-align:right;"><strong>희동이</strong>님 환영합니다
-    <a id="bts" class="btn btn-success" href="#" role="button">정보수정</a></h6>
-
+    <h6 style="text-align:right;margin-right:1.5rem;"><strong>{{user.username}}</strong>님 환영합니다
 </div>
 
+<div class='row'>
+    <a class="col-7"></a>
+    <a id="bts" class="btn btn-success btn-sm col-2" href="{% url 'accounts:update' %}" role="button">정보수정</a></h6>&nbsp;
+    <a id="bts" class="btn btn-success btn-sm col-2" href="{% url 'accounts:logout' %}" role="button">로그아웃</a></h6>
+
+</div>
 <!-- 내가 저장한 상품 -->
 <div class="mainproduct">
     <div class="mainproductcontent">

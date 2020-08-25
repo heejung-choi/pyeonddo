@@ -25,6 +25,18 @@ class CustomUserCreationForm(UserCreationForm):
         fields = ('username','password1','password2','name_kr','phone','category','prefer_store')
 
 class CustomUserChangeForm(UserChangeForm):
+    phone = forms.CharField(
+        label='휴대폰번호',
+    )
+    name_kr = forms.CharField(
+        label='이름',
+    )
+    category = forms.CharField(
+        label='즐겨찾는 상품',
+    )
+    prefer_store = forms.CharField(
+        label='즐겨찾는 매장',
+    )  
 
     class Meta:
         model = get_user_model()

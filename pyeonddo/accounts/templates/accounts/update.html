@@ -1,32 +1,17 @@
+{% extends 'base.html' %}
 {% load static %}
 {% load bootstrap4 %}
-<link rel="stylesheet" href="{% static 'css/bootstrap.min (2).css'%}">
 {% block style %}
 <style>
-@media all and (min-width:320px){
-body{
-    margin-top: 40rem;
-    margin-left: 20rem;
-    background: #ff9999;
-}
-.form-control{
-    width: 50%;
-    
-    
-}
-.btn.btn-outline-info{
-      margin-left: 17rem;
-}
-}
+
 </style>
 
 {% endblock  %}
 {% block content %}
-  <!--20200814 semi update(회원정보수정)-->
-    <div class="contact-heading">
-        <h3>UPDATE</h3>
-    </div>
-
+  <!--20200825 semi update(회원정보수정)-->
+    <br>
+    <h5 style='text-align:center;'>회원정보수정</h5>
+    <br>
     <form action="" method="POST"  class="d-inline" enctype="multipart/form-data">
         {% csrf_token %}
         {% bootstrap_form form %}
