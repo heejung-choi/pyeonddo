@@ -17,22 +17,19 @@
     {% bootstrap_form form %}
 
     <!--선호매장검색 시작-->
-    <div class="form-group">
+    {% comment %} <div class="form-group">
+        <label for ="id_prefer_Store">매장명</label>
         <div class="row">
-        <div class="col-9" style='padding-left:1em'>
-            <input id="check-store" class="form-control" type="text" placeholder="매장명을 입력해주세요">
-        </div>
-        <div class="col-3">
-            <a id="check-url" href="" target="_blank">
-                <button type="button" id="check-store2" class="btn btn-outline-success"  onclick="myFunction();"> 
+            <div class="col-9">
+                <input type="text" name="prefer_store" class="form-control" placeholder="매장명을 입력해주세요" title="" required id="id_prefer_store">
+            </div>
+            <div class="col-3">
+                <button type="button" id="check-store" class="btn btn-outline-success"  onclick=""> 
                 검색
                 </button>
-            </a>
-        </div>
-        <br>
-    </div>  
-
-
+            </div>
+        </div>    
+    </div> {% endcomment %}
     <!--선호매장검색 끝 -->
     <br>
     <div style='text-align:center;'>
@@ -44,6 +41,13 @@
 
 <!--선호매장검색-->
 <script>
+    {% comment %} function myFunction() {
+        checkStore = document.querySelector('#check-store2').getAttribute('href')
+        USERNAME = document.querySelector('#check-username').value
+        checkUsername = URL + USERNAME
+        document.querySelector('#check-url').setAttribute('href', checkUsername)
+        window.open(checkUsername,"","width=400,height=280")
+    } {% endcomment %}
 
 </script>
 

@@ -24,7 +24,7 @@ class CustomUserCreationForm(UserCreationForm):
         label='선호상품',
         help_text='해당 할인 상품을 추천해드립니다.'
     )
-    prefer_store = forms.ChoiceField(
+    prefer_brand = forms.ChoiceField(
         choices=[("1", "GS25"),
                  ("2", "CU"),
                  ("3", "이마트24"),
@@ -32,16 +32,14 @@ class CustomUserCreationForm(UserCreationForm):
                  ("5", "미니스톱")],
         widget=forms.Select,
         label='단골편의점',
-        help_text='해당 지점의 이벤트를 안내해드립니다.'
-    )         
-
+    )
+    prefer_store = forms.CharField(
+        label='매장명',       
+    )
     class Meta:
         model = get_user_model()
         # fields = '__all__'
-        fields = ('username','password1','password2','name_kr','phone','category','prefer_store')
-        widgets =(
-            ''
-        ) 
+        fields = ('username','password1','password2','name_kr','phone','category','prefer_brand','prefer_store')
 
 class CustomUserChangeForm(UserChangeForm):
     username =  forms.CharField(
@@ -64,7 +62,7 @@ class CustomUserChangeForm(UserChangeForm):
         widget=forms.Select,
         label='선호상품'
     )
-    prefer_store = forms.ChoiceField(
+    prefer_brand = forms.ChoiceField(
         choices=[("1", "GS25"),
                  ("2", "CU"),
                  ("3", "이마트24"),
@@ -72,9 +70,12 @@ class CustomUserChangeForm(UserChangeForm):
                  ("5", "미니스톱")],
         widget=forms.Select,
         label='단골편의점',
-    )  
+    ) 
+    prefer_store = forms.CharField(
+        label='매장명',
+    ) 
 
     class Meta:
         model = get_user_model()
-        fields = ('username','phone','name_kr','category','prefer_store')        
+        fields = ('username','phone','name_kr','category','prefer_brand','prefer_store','prefer_store')        
 
