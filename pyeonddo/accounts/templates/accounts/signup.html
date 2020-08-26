@@ -15,11 +15,37 @@
 <form action='' method='POST' enctype='multipart/form-data'>
     {% csrf_token %}
     {% bootstrap_form form %}
-    <div class="row">
-        <div class='col'></div>
-        <button class='col btn btn-success'>Submit</button>
-        <div class='col'></div>
+
+    <!--선호매장검색 시작-->
+    <div class="form-group">
+        <div class="row">
+        <div class="col-9" style='padding-left:1em'>
+            <input id="check-store" class="form-control" type="text" placeholder="매장명을 입력해주세요">
+        </div>
+        <div class="col-3">
+            <a id="check-url" href="" target="_blank">
+                <button type="button" id="check-store2" class="btn btn-outline-success"  onclick="myFunction();"> 
+                검색
+                </button>
+            </a>
+        </div>
+        <br>
+    </div>  
+
+
+    <!--선호매장검색 끝 -->
+    <br>
+    <div style='text-align:center;'>
+        <button class='btn btn-success'>가입</button>
     </div>
+    <br><br>
 </form>
+
+
+<!--선호매장검색-->
+<script>
+
+</script>
+
+
 {% endblock %}
-    
