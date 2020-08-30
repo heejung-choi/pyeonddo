@@ -1,7 +1,7 @@
 import csv
 import json
 
-with open('cu.csv') as f:
+with open('cutest.csv') as f:
        reader = csv.DictReader(f)
        rows = list(reader)
 

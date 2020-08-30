@@ -1,0 +1,100 @@
+brand,name,addr,time,atm,medicine,wine,lotto,bakery,delivery
+cu,1타타대우상용차신협,"전라북도 군산시 동장산로 172, (소룡동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,2타타대우상용차신협,"전라북도 군산시 동장산로 172, (소룡동) 1층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,419사거리점,"서울특별시 강북구 삼양로139길 8, (우이동)",00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,63빌딩점,"서울특별시 영등포구 63로 50, 하(여의도동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,6공단1호점,인천광역시 남구 장고개로 48 믿음슈퍼,00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,6공단2호점,인천광역시 남구 염전로 241,00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,7번국도점,"경상북도 울진군 후포면 후포삼율로 260, (후포리)",00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,88체육관점,"서울특별시 강서구 공항대로 376, 체육관 1체육관 內(화곡동) 1층",00:00~00:00,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,BGF로지스용인점,"경기도 용인시 기흥구 이현로30번길 131-1, (보정동) 1층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,CK양평점,서울특별시 영등포구 영등포로3길 16,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,EBS일산사옥점,"경기도 고양시 일산동구 한류월드로 281, (장항동) 지하1층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,ES충주호리조트점,"충청북도 제천시 수산면 옥순봉로 1248, (능강리)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E가평휴게소상행선점,"경기도 가평군 설악면 미사리로 544, (미사리)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E가평휴게소하행선점,"경기도 가평군 설악면 미사리로540번길 51, (미사리)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E거가대교가덕휴게소,"부산광역시 강서구 거가대로 2571, (천성동) 1층",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E거가대교거제휴게소,"경상남도 거제시 장목면 거가대로 1068, (율천리) 1층",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E경기광주휴게소상행,경기도 광주시 곤지암읍 만삼로 211 _,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E경기광주휴게소하행,경기도 광주시 곤지암읍 만삼로 270 _,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E구리남양주휴게소점,경기도 구리시 서울외곽순환고속도로 27 한국도로공사구리남양주영업소 (토평동) 한국도로공사구리남양주영업소,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E군자휴게소점,경기도 시흥시 군자로335번길 36-29 한국도로공사군자영업소 (거모동) 한국도로공사군자영업소,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E김포휴게소점,경기도 김포시 고촌읍 김포대로319번길 209-23 한국도로공사김포영업소 (신곡리) 한국도로공사김포영업소 1층,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E서하남휴게소점,경기도 하남시 서울외곽순환고속도로 19,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E시흥상공휴게소1점,"경기도 시흥시 서울외곽순환고속도로 105, (조남동) B1층",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E시흥상공휴게소2점,"경기도 시흥시 서울외곽순환고속도로 105, (조남동) 2층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E양평휴게소상행선점,경기도 양평군 양동면 여양3로 384-27 _,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E양평휴게소하행선점,경기도 양평군 양동면 송석2길 52 _,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E의왕휴게소상행선점,경기도 의왕시 오전로 24 경기남부도로 (왕곡동) 경기남부도로,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E의왕휴게소하행선점,경기도 의왕시 오전로 24 경기남부도로 (왕곡동) 경기남부도로,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E청도휴게소(상)점,"경상북도 청도군 청도읍 하지길 59-50, (거연리)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E청도휴게소(하)점,"경상북도 청도군 청도읍 하지길 59-49, (거연리)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E행담도휴게소상행선,충청남도 당진시 신평면 서해안고속도로 275 (매산리),00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,E황전휴게소상행선점,전라남도 순천시 황전면 순천완주고속도로 28 황전(전주)방향휴게소 (선변리) 황전(전주)방향휴게소,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,H속초라마다호텔점,강원도 속초시 대포항희망길 106 속초라마다해양호텔 (대포동) 속초라마다해양호텔,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,H용산몬드리안호텔점,서울특별시 용산구 장문로 23 캐피탈호텔 (이태원동) 캐피탈호텔,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,JJ가락점,"서울특별시 송파구 송이로27길 6, (가락동)",00:00~24:00,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE
+cu,JJ올림픽점,"서울특별시 송파구 양재대로 1222, 방이동 (방이동)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,JW타워점,"서울특별시 서초구 남부순환로 2477, JWTOWER (서초동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,KCC스위첸점,전라북도 전주시 덕진구 오송1길 37-13,00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,KCC웰츠밸리점,서울특별시 금천구 가산디지털1로 205 케이씨씨웰츠밸리 (가산동) 케이씨씨웰츠밸리,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,KH가양주유소점,"서울특별시 강서구 강서로 498, (가양동)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,KH기쁨주유소점,"경기도 고양시 일산동구 고양대로 1064, (식사동) 1층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,KH덕소주유소점,"경기도 남양주시 와부읍 경강로 881, GS덕소주유소 (팔당리)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,KH동양주유소점,경기도 시흥시 금오로 580 SK동양주유소 (과림동) SK동양주유소,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,KH미산주유소점,경기도 시흥시 시흥대로 944 SK미산주유소 (미산동) SK미산주유소,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,KH에너지연천충전소점,경기도 연천군 청산면 평화로 193 연천LPG충전소 (초성리) 연천LPG충전소 1층,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,KORAIL연수원점,"강원도 양양군 강현면 동해대로 3457, (정암리)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,KTX강릉역점,강원도 강릉시 용지로 174 (교동),00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,KTX광명점,"경기도 광명시 신기로17번길 3, 서원빌딩 (일직동) 1층",00:00~00:00,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,KTX서대구광장점,"대구광역시 서구 와룡로 489, (이현동)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,KT스마트메디타워점,"대구광역시 중구 동덕로 167, (동인동2가) 1층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,KT지식센터점,"서울특별시 영등포구 영신로 220, (영등포동8가) 1층 104호",00:00~00:00,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE
+cu,LG로점,"경기도 파주시 월롱면 엘지로 248, (덕은리) 1층",00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,M강남역점,"서울특별시 강남구 테헤란로 101, 강남역구내상가 번호(역삼동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M건대입구역점,"서울특별시 광진구 아차산로 243, 구내상가 번호 04 선 건대입구역(화양동) 2층층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M구의역점,"서울특별시 광진구 아차산로 384-1, (구의동, 2호선 구의역)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M김포공항역점,서울특별시 강서구 하늘길 지하 77 김포공항역 (방화동) 김포공항역,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M대림역점,서울특별시 영등포구 대림로 지하 137 대림역,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M미아역점,"서울특별시 강북구 도봉로 지하 198, (미아동) B1층 415-105호",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M사당폰토피아점,서울특별시 동작구 동작대로 지하 3 사당역(4호선) (사당동) 사당역(4호선),00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M신도림역점,"서울특별시 구로구 새말로 117-21, 구내상가 번호(신도림동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M신촌역점,"서울특별시 마포구 신촌로 90, 구내상가 번호(노고산동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M양재역점,"서울특별시 서초구 남부순환로 2585, 선양재역구내상가 번호08(서초동) 지하1층층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M역삼역점,"서울특별시 강남구 테헤란로 156, (역삼동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M잠실롯데타워점,서울특별시 송파구 올림픽로 305 잠실역8호선 -1층 E호,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M잠실역점,"서울특별시 송파구 올림픽로 265, 서울메트로 2호선 잠실역(잠실동) 1층 216동 02호",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M종합운동장역점,"서울특별시 송파구 올림픽로 23, 서울메트로 2호선(잠실동) 지하층 218동 02호",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M충무로역점,"서울특별시 중구 퇴계로 지하 199, 충무로역3 423동 4호 선 109호(필동2가)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,M홍제역점,"서울특별시 서대문구 통일로 440-1, 선홍제역 지하(홍제동) 지하2층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,R소노문단양점,충청북도 단양군 단양읍 삼봉로 187-17 소노문 리조트(상진리) 소노문리조트 -1층,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SBS목동신사옥점,"서울특별시 양천구 목동서로 161, S방송센터 SB 내(목동) B1층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK강매주유소점,"경기도 고양시 덕양구 중앙로 316, 도내동주유소 (도내동) 1층",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,SK강화경기주유소점,"인천광역시 강화군 선원면 중앙로 233, (창리) 1층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK고속세차주유소점,"경기도 수원시 영통구 중부대로 384, 수원고속주유소 (매탄동) 1층",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK광명삼성주유소점,"경기도 광명시 범안로 925, (하안동) 1층층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK광명제일주유소점,경기도 광명시 범안로 608 제일주유소 (노온사동) 제일주유소,00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK광명학온주유소점,경기도 광명시 광명로 627 (광명동),00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK괴정주유소점,"부산광역시 사하구 사하로 129, (괴정동) 1층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK기린주유소점,서울특별시 영등포구 선유로52길 5 (양평동4가),00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK노원역주유소점,"서울특별시 노원구 노해로75길 20-25, (상계동)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK논현제일주유소점,"인천광역시 남동구 청능대로 460, (고잔동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK대구합천주유소점,"대구광역시 서구 염색공단천로 78, (비산동) 1층",00:00~00:00,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK대양충전소점,"울산광역시 북구 산업로 1454, (신천동) 1층",00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK대우셀프주유소점,서울특별시 서초구 양재대로 173 톨게이트주유소 1층,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK대자셀프주유소점,경기도 고양시 덕양구 통일로 499 대자주유소 1층,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK대호주유소점,"경기도 수원시 영통구 창룡대로 442, (이의동) 1층",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK덕양제2주유소점,경기도 고양시 일산서구 경의로 940,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK동해동방주유소점,강원도 동해시 동해대로 4912 동방주유소 (나안동),00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,SK맘모스주유소점,"충청남도 천안시 동남구 만남로 126, (신부동)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK매일주유소점,"서울특별시 강북구 삼양로 217, (미아동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK백제고분로주유소점,"서울특별시 송파구 오금로 143, (방이동) 1층",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK비전코리아주유소점,경기도 고양시 일산동구 고봉로 788 (설문동),00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK사과나무주유소점,"경기도 양주시 부흥로 1881, (광사동)",00:00~00:00,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK사우디제7주유소점,"경기도 고양시 일산동구 백마로 37, (장항동)",00:00~24:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK삼성제일주유소점,"대구광역시 달서구 달구벌대로 1154, (신당동) 1층",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK삼척IC점,"강원도 삼척시 오십천로 101, (등봉동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+cu,SK서린사옥점,"서울특별시 종로구 종로 26, SK빌딩 지하(서린동)",00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,SK서부주유소점,"서울특별시 서대문구 성산로 255, (연희동) 1층",00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,SK서충주IC점,충청북도 충주시 신덕로 225 (신니면) 1층,00:00~00:00,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE
+cu,SK세지주유소점,"경기도 시흥시 서해안로 120, (정왕동)",00:00~24:00,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
