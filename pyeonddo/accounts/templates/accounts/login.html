@@ -15,11 +15,15 @@
 <form action='' method='POST' enctype='multipart/form-data'>
     {% csrf_token %}
     {% bootstrap_form form %}
-    <div class="row">
-        <div class='col'></div>
-        <br>
-        <button class='col btn btn-success'>Submit</button>
-        <div class='col'></div>
+    <br>
+    <div style='text-align:center'>
+        <button class='btn btn-success'>로그인</button>
     </div>
 </form>
+<br>
+<div style='text-align:center'>
+    {% comment %} <a class="col-4"></a> {% endcomment %}
+    <a href="{% url 'accounts:signup' %}">회원가입하기(Click)</a>
+    {% comment %} <a class="col-4"></a> {% endcomment %}
+</div>
 {% endblock %}

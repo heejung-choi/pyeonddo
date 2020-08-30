@@ -15,11 +15,41 @@
 <form action='' method='POST' enctype='multipart/form-data'>
     {% csrf_token %}
     {% bootstrap_form form %}
-    <div class="row">
-        <div class='col'></div>
-        <button class='col btn btn-success'>Submit</button>
-        <div class='col'></div>
+
+    <!--선호매장검색 시작-->
+    {% comment %} <div class="form-group">
+        <label for ="id_prefer_Store">매장명</label>
+        <div class="row">
+            <div class="col-9">
+                <input type="text" name="prefer_store" class="form-control" placeholder="매장명을 입력해주세요" title="" required id="id_prefer_store">
+            </div>
+            <div class="col-3">
+                <button type="button" id="check-store" class="btn btn-outline-success"  onclick=""> 
+                검색
+                </button>
+            </div>
+        </div>    
+    </div> {% endcomment %}
+    <!--선호매장검색 끝 -->
+    <br>
+    <div style='text-align:center;'>
+        <button class='btn btn-success'>가입</button>
     </div>
+    <br><br>
 </form>
+
+
+<!--선호매장검색-->
+<script>
+    {% comment %} function myFunction() {
+        checkStore = document.querySelector('#check-store2').getAttribute('href')
+        USERNAME = document.querySelector('#check-username').value
+        checkUsername = URL + USERNAME
+        document.querySelector('#check-url').setAttribute('href', checkUsername)
+        window.open(checkUsername,"","width=400,height=280")
+    } {% endcomment %}
+
+</script>
+
+
 {% endblock %}
-    
