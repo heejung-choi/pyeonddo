@@ -3,7 +3,7 @@ from . models import Store
 
 # Create your views here.
 def kind(request):
-    stores = Store.objects.all()
+    stores = Store.objects.all()[11500:]
     for store in stores:
         print(store)
     context = {
